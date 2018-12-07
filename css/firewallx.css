@@ -168,6 +168,18 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
 .p-404 p { margin: 20px 0; color: #666;}
 
 @media screen and (max-width: 750px) {
+    .header { padding: 15px 15px 5px 15px;}
+    .header .logo img { height: 46px;}
+    .header .nav { float: none;}
+    .header .nav .btn-login { display: none;}
+    .header .nav .lang { position: absolute; right: 15px; top: 15px; margin: 0;}
+    .header .nav ul { width: 100%; padding-top: 5px;}
+    .header .nav ul li { width: 25%; margin: 0;}
+    .header .nav ul li a { display: block; padding: 5px 0; text-align: center;}
+    .banner { padding: 40px 0;}
+    .i-login { padding: 60px 0 30px 0;}
+    .i-login p { font-size: 12px;}
+    .footer p { padding: 0 10px;}
 
 }
 
