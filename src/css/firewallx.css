@@ -71,9 +71,9 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
 .box-r { padding-left: 220px;}
 .box-top { position: fixed; top: 0; left: 0; width: 100%; z-index: 997;}
 .box-top-con { padding: 0 20px 0 240px; height: 76px; box-shadow: 0 0 10px rgba(0,0,0,0.1); background-color: #fff;}
-.box-top-con .title { float: left; padding-top: 24px;}
+.box-top-con .title { float: left; padding-top: 24px; position: relative;}
 .box-top-con .title i { display: inline-block; width: 5px; height: 14px; background-color: #6569cb; margin-right: 8px; position: relative; top: 1px;}
-.box-top-con .title .btn-newdapp { margin-left: 10px; font-weight: normal; display: inline-block; padding: 4px 12px; background-color: #6569cb; color: #fff; transition: all ease .3s; border-radius: 2px; font-size: 14px; position: relative; top: -2px;}
+.box-top-con .title .btn-newdapp { width: 120px; font-weight: normal; display: inline-block; padding: 4px 0; background-color: #6569cb; color: #fff; transition: all ease .3s; border-radius: 2px; font-size: 14px; position: absolute; top: 22px; left: 110px;}
 .box-top-con .title .btn-newdapp:hover { background-color: #7d81dc; color: #fff; transition: all ease .3s;}
 
 .box-top-gn { float: right; padding-top: 24px;}
@@ -86,6 +86,7 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
 .box-top-gn .user { float: left; margin-right: 20px; padding-top: 2px;}
 .box-top-gn .user .btn-logout { display: inline-block; padding: 2px 10px; margin-left: 5px; background-color: #e94746; color: #fff; border-radius: 2px; transition: all ease .3s;}
 .box-top-gn .user .btn-logout:hover { background-color: #f36b6a; transition: all ease .3s;}
+.box-top-gn .user a.btn-green { padding: 4px 10px; position: relative; top: -2px;}
 
 
 .box-con { padding: 96px 20px 20px 20px;}
@@ -166,20 +167,49 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
 
 .p-404:before { display: inline-block; content: ''; background: url("../images/404.png") no-repeat center bottom; width: 100%; height: 280px; background-size: auto 180px;}
 .p-404 p { margin: 20px 0; color: #666;}
+.statistics-box .btn-more-box { text-align: center;}
+.statistics-box .btn-more-box a.btn-blue { margin: 0 3px;}
+.statistics-box h3.tit a.btn-clear { float: right; font-weight: normal; font-size: 12px;}
 
 @media screen and (max-width: 750px) {
     .header { padding: 15px;}
     .header .logo img { height: 46px;}
     .header .nav { float: none;}
-    .header .nav .btn-login { padding: 2px 10px;}
+    .header .nav .btn-login { padding: 2px 10px; position: absolute; top: 20px; right: 15px;}
     .header .nav .lang { position: absolute; right: 15px; top: 15px; margin: 0;}
-    .header .nav ul { display: none; width: 100%; padding-top: 5px;}
-    .header .nav ul li { width: 50%; margin: 0;}
+    .header .nav ul { display: block; width: 100%; padding-top: 5px;}
+    .header .nav ul li { width: 25%; margin: 0;}
     .header .nav ul li a { display: block; padding: 5px 0; text-align: center;}
     .banner { padding: 40px 0;}
     .i-login { padding: 60px 0 30px 0;}
     .i-login p { font-size: 12px;}
     .footer p { padding: 0 10px;}
+
+    .box-l { width: 100%; height: 90px; z-index: 9;}
+    .box-l .m-nav a { border-bottom: 2px solid transparent; padding: 8px 0;}
+    .box-l .m-nav a.router-link-active { background: none; border-bottom: 2px solid #6569cb;}
+    .box-l .logo a { margin: 15px auto 5px auto;}
+    .box-r { padding: 90px 0 0 0;}
+    .m-nav { *zoom: 1; background-color: #1a153d;}
+    .m-nav:after { display: block; clear: both; height: 0; content: "\0020"}
+    .m-nav li { float: left; width: 33.33%;}
+    .box-top { top: 96px;}
+    .box-top-con { padding: 0; height: auto;}
+    .box-top-con .title { left: 0; background-color: #fff; text-align: left; width: 100%; padding: 8px 0; border-bottom: 1px solid #ddd;}
+    .box-top-con .title .btn-newdapp { text-align: center; top: 5px;}
+    .box-top-gn { padding: 5px ;}
+    .box-top-gn .net { margin: 0 10px 0 0;}
+    .box-top-gn .lang { display: none;}
+    .box-top-gn .user { margin: 0 10px 0 0;}
+    .box-con { padding: 95px 10px 10px 10px;}
+    .newdapp-box,.rule-box,.statistics-box { padding: 0;}
+    .box-content { padding: 30px 15px;}
+    .list-table .btn-group a { margin: 3px 0;}
+    .rule-box ul li { padding: 0; margin-bottom: 10px;}
+    .rule-box ul li label { position: relative; margin: 0 0 10px 0; display: block;}
+    .rule-box ul li:first-child label { display: inline-block;}
+    .rule-box .rule-lib { margin-bottom: 25px;}
+    .rule-box .rule-lib dd span { display: block; padding: 5px 0 0 15px;}
 
 }
 
