@@ -171,6 +171,10 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
 .statistics-box .btn-more-box a.btn-blue { margin: 0 3px;}
 .statistics-box h3.tit a.btn-clear { float: right; font-weight: normal; font-size: 12px;}
 
+.bti-logo { position: absolute; top: 33px; left: 265px; padding-left: 20px; border-left: 1px solid #ddd;}
+.bti-logo img { height: 36px; display: block;}
+
+
 @media screen and (max-width: 750px) {
     .header { padding: 15px 10px 3px 10px;}
     .header .logo img { height: 38px;}
@@ -189,7 +193,7 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
     .box-l { width: 100%; height: 90px; z-index: 9;}
     .box-l .m-nav a { border-bottom: 2px solid transparent; padding: 8px 0;}
     .box-l .m-nav a.router-link-active { background: none; border-bottom: 2px solid #6569cb;}
-    .box-l .logo a { margin: 15px auto 5px auto;}
+    .box-l .logo a { margin: 15px 0 5px 20px;}
     .box-r { padding: 90px 0 0 0;}
     .m-nav { *zoom: 1; background-color: #1a153d;}
     .m-nav:after { display: block; clear: both; height: 0; content: "\0020"}
@@ -200,7 +204,8 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
     .box-top-con .title .btn-newdapp { text-align: center; top: 5px;}
     .box-top-gn { padding: 5px ;}
     .box-top-gn .net { margin: 0 10px 0 0;}
-    .box-top-gn .lang { display: none;}
+    .box-top-gn .lang { position: absolute; top:-75px; right: 15px;}
+    .box-top-gn .lang a { color: #fff;}
     .box-top-gn .user { margin: 0 10px 0 0;}
     .box-con { padding: 95px 10px 10px 10px;}
     .newdapp-box,.rule-box,.statistics-box { padding: 0;}
@@ -211,6 +216,8 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
     .rule-box ul li:first-child label { display: inline-block;}
     .rule-box .rule-lib { margin-bottom: 25px;}
     .rule-box .rule-lib dd span { display: block; padding: 5px 0 0 15px;}
+    .bti-logo { position: relative; top: 0; left: 0; padding-left: 0; border-left: none; padding-bottom: 20px;}
+    .bti-logo img { height: 36px; display: block; margin: 0 auto;}
 
 }
 
