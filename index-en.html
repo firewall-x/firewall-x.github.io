@@ -6,6 +6,7 @@
     <meta content="email=no,telephone=no" name="format-detection"/>
     <title>FireWall.X — Powerful firewall of EOS smart contract</title>
     <link rel="shortcut icon" href="src/images/favicon.ico">
+    <link rel="stylesheet" href="src/css/swiper-3.4.0.min.css">
     <link rel="stylesheet" href="src/css/firewallx.css">
 </head>
 
@@ -17,28 +18,160 @@
     <div class="nav">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="https://github.com/firewall-x/contract" target="_blank">Developer</a></li>
+            <li><a href="#">Doc</a></li>
             <li><a href="#i-contact">Contact us</a></li>
             <li><a href="https://www.slowmist.com/" target="_blank">SlowMist</a></li>
         </ul>
         <p class="lang"><a href="index.html">中文</a> | <a href="index-en.html">EN</a></p>
-        <a  href="/console/" class="btn-login" target="_blank"><i></i>Console</a>
+        <a href="#" class="btn-login"><i></i>Console</a>
     </div>
 </div>
+
 <div class="main">
-    <div class="banner banner1"><img src="src/images/b1-en.png"></div>
-    <div class="banner banner2"><img src="src/images/b2-en.png"></div>
-    <div class="banner banner3"><img src="src/images/b3-en.png"></div>
-    <div class="banner banner4"><img src="src/images/b4-en.png"></div>
+    <div class="news-zt">
+        <div class="swiper-container swiper-zxkz">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="src/images/b1-en.png"></div>
+                <div class="swiper-slide"><img src="src/images/b2-en.png"></div>
+                <div class="swiper-slide"><img src="src/images/b3-en.png"></div>
+                <div class="swiper-slide"><img src="src/images/b4-en.png"></div>
+            </div>
+            <div class="swiper-button-next"><i class="fa fa-angle-right"></i></div>
+            <div class="swiper-button-prev"><i class="fa fa-angle-left"></i></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="i-statistics">
+        <h2 class="tit">Continuously Protect Your DApps</h2>
+        <!--<h2 class="tit">累计提供 123,456,789 次安全防护，成功拦截 333 次攻击</h2>-->
+        <ul class="clearFix">
+            <li>
+                <img src="src/images/statistics-pic1.png">
+                <p><span class="i-statistics1">0</span> Contract Addresses</p>
+            </li>
+            <li>
+                <img src="src/images/statistics-pic2.png">
+                <p><span class="i-statistics2">0</span> Hacker Addresses</p>
+            </li>
+            <li>
+                <img src="src/images/statistics-pic3.png">
+                <p><span class="i-statistics3">0</span> DApp Users</p>
+            </li>
+        </ul>
+        <!--<p class="tips">* 统计数据由 EOSPark API 提供支持</p>-->
+    </div>
+    <div class="i-dapp">
+        <h2 class="tit">CASE</h2>
+        <ul class="clearFix">
+            <li>
+                <img src="src/images/dapp-pic1.jpg">
+                <p>柚子打鱼</p>
+            </li>
+            <li>
+                <img src="src/images/dapp-pic2.png">
+                <p>EOSPoker Games</p>
+            </li>
+            <li>
+                <img src="src/images/dapp-pic3.png">
+                <p>Poker EOS</p>
+            </li>
+            <li>
+                <img src="src/images/dapp-pic4.png">
+                <p>EOSReel</p>
+            </li>
+            <li>
+                <img src="src/images/dapp-pic5.png">
+                <p>GameBet</p>
+            </li>
+        </ul>
+    </div>
+    <div class="i-partner">
+        <h2 class="tit">PARTNER</h2>
+        <ul class="clearFix">
+            <li><a href="https://eospark.com/dapps?tab=tool" target="_blank"><img src="src/images/partner1.png"></a></li>
+            <li><a href="https://dapp.review/dapp/10566/" target="_blank"><img src="src/images/partner2.png"></a></li>
+            <li><a href="https://www.dapp.com/dapp/firewall-x" target="_blank"><img src="src/images/partner3.png"></a></li>
+            <li><a href="https://www.dappradar.com/eos/899/firewall-x" target="_blank"><img src="src/images/partner4.png"></a></li>
+            <li><a href="https://www.dfuse.io/" target="_blank"><img src="src/images/partner5.png"></a></li>
+            <li><a href="https://www.eosinfra.io/" target="_blank"><img src="src/images/partner6.png"></a></li>
+            <li><a href="https://www.eosstudio.io/" target="_blank"><img src="src/images/partner7.png"></a></li>
+        </ul>
+    </div>
 </div>
+
 <div class="i-login" id="i-contact">
     <p><a href="https://t.me/joinchat/GG-aoRbwIzgOybx23TBGbQ" target="_blank"><i></i></a></p>
-    <p>Being beta, join Telegram for more information.</p>
+    <p>Join Telegram for more information.</p>
     <a href="https://t.me/joinchat/GG-aoRbwIzgOybx23TBGbQ" class="btn-login" target="_blank"><span style="padding:3px 20px">Telegram</span></a>
 </div>
 <div class="footer">
     <p>Copyright © 2018 FireWall.X All Rights Reserved. incubate by <a href="https://www.slowmist.com/" target="_blank">SlowMist</a></p>
 </div>
-<div class="bti-logo"><a href="https://www.slowmist.com/bti.html" target="_blank"><img src="src/images/bti-logo.png"></a></div>
+<div class="bti-logo"><a href="https://www.slowmist.com/en/bti.html " target="_blank"><img src="src/images/bti-logo.png"></a></div>
+
+
+<script src="js/jquery-2.2.3.min.js" type="text/javascript"></script>
+<script src="js/swiper-3.4.0.jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-zxkz', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 3500,
+        autoplayDisableOnInteraction: false,
+        loop: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30
+    });
+
+</script>
+
+<script type="text/javascript">
+    let token = 'eyJhbGciOiJLTVNFUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NTQzODk5MzksImp0aSI6ImE0ZjJjOTQ5LWM2NDUtNGMzMy05N2E3LTQ1MzlmNTg3NTVhNSIsImlhdCI6MTU1MTc5NzkzOSwiaXNzIjoiZGZ1c2UuaW8iLCJzdWIiOiJDaVFBNmNieWUzYlZTc2ZjRmQ1TmlsQTFiWTY5M2JTckh3UXJRWXJnUDlOVDZsaUdWTG9TT2dBL0NMUnREazFDUVZaZUUzeFZrL01PREdGaUZyaHNPU0VMYnBmcjBoRkozVGFTR3ZFdTJaUFAyMGltTTdwY01RZ0c2N00rSHZOVGdyND0iLCJ0aWVyIjoiYmV0YS12MSIsInYiOjF9.VJfPYshQ6bCYGkK1Pc8zAUGdTqYsRhH1NiGigOMpfl9w5BNBy4V40_jf7T0yoEO_wdo51OSEb5oeE_GQrah_GA'
+    $.ajax({
+        type:"get",
+        url:"https://mainnet.eos.dfuse.io/v0/state/table?account=firewall.x&scope=firewall.x&table=contractlst&json=true&token="+token,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (res) {
+            let statisticsNum1 = res.rows.length;
+            $(".i-statistics1").text(statisticsNum1);
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            const data = JSON.parse(XMLHttpRequest.responseText);
+            alert(data);
+        }
+    });
+    $.ajax({
+        type:"get",
+        url:"https://mainnet.eos.dfuse.io/v0/state/table?account=firewall.x&scope=firewall.x&table=malicious&json=true&token="+token,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (res) {
+            let statisticsNum2 = res.rows.length;
+            $(".i-statistics2").text(statisticsNum2);
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            const data = JSON.parse(XMLHttpRequest.responseText);
+            alert(data);
+        }
+    });
+    $.ajax({
+        type:"get",
+        url:"https://mainnet.eos.dfuse.io/v0/state/table?account=firewall.x&scope=firewall.x&table=member&json=true&token="+token,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (res) {
+            let statisticsNum3 = res.rows.length;
+            $(".i-statistics3").text(statisticsNum3);
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            const data = JSON.parse(XMLHttpRequest.responseText);
+            alert(data);
+        }
+    });
+
+</script>
+
 </body>
 </html>

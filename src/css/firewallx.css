@@ -175,6 +175,42 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
 .bti-logo img { height: 36px; display: block;}
 
 
+.news-zt { width: 100%; margin: 0 auto;}
+.news-zt img { height: 560px; display: block; margin: 0 auto;}
+.news-zt .swiper-slide:nth-child(even) { background-color: #1a153d;}
+.news-zt .swiper-slide:nth-child(odd) { background-color: #6569cb;}
+.swiper-pagination-bullet { background: #fff;}
+.swiper-pagination-bullet-active { background: #fff;}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next { background: url("../images/news-l.png") no-repeat 50% 50%; background-size: 9px 18px;}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev { background: url("../images/news-r.png") no-repeat 50% 50%; background-size: 9px 18px;}
+
+
+.i-statistics, .i-partner { background: #fff; padding: 120px 0;}
+.i-statistics h2.tit { margin-bottom: 50px;}
+.i-statistics ul { max-width: 1200px; margin: 0 auto;}
+.i-statistics li { float: left; width: 33.33%; margin-bottom: 20px;}
+.i-statistics li img { width: 100px; margin-bottom: 10px;}
+.i-statistics li p { font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.i-statistics li p span { font-size: 20px;}
+
+
+.i-dapp { padding: 120px 0;}
+.i-dapp h2.tit { margin-bottom: 50px;}
+.i-dapp ul { max-width: 1200px; margin: 0 auto;}
+.i-dapp li { float: left; width: 20%;}
+.i-dapp li p { font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.i-dapp li img { width: 90px; height: 90px; border-radius: 20px; background-color: #fff; padding: 10px; margin-bottom: 10px;}
+
+
+.i-partner h2.tit { margin-bottom: 50px;}
+.i-partner ul { max-width: 1200px; margin: 0 auto;}
+.i-partner li { float: left; width: 25%; margin-bottom: 20px;}
+.i-partner li img { max-width: 180px; display: block;  margin: 0 auto;}
+.i-partner li a { display: inline-block; border: 1px solid #eee; padding: 5px; box-shadow: 0 1px 3px -2px rgba(10, 16, 34, .1); transition: all .3s ease;}
+.i-partner li a:hover { box-shadow: 0 10px 60px -2px rgba(10, 16, 34, .1); transition: all .3s ease;}
+
+.i-statistics p.tips { padding-top: 10px; color: #999; font-size: 12px;}
+
 @media screen and (max-width: 750px) {
     .header { padding: 15px 10px 3px 10px;}
     .header .logo img { height: 38px;}
@@ -218,6 +254,22 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
     .rule-box .rule-lib dd span { display: block; padding: 5px 0 0 15px;}
     .bti-logo { position: relative; top: 0; left: 0; padding-left: 0; border-left: none; padding-bottom: 20px;}
     .bti-logo img { height: 36px; display: block; margin: 0 auto;}
+
+    .news-zt img { width: 100%; height: auto;}
+    .i-statistics, .i-partner { padding: 40px 0;}
+    .i-statistics h2.tit { margin-bottom: 25px;}
+    .i-statistics li img { width: 60px;}
+    .i-statistics li p { font-size: 12px;}
+    .i-dapp li { width: 33.33%; margin-bottom: 20px;}
+    .i-dapp li img { width: 60px; height: 60px; margin-bottom: 3px;}
+    .i-dapp li p { font-size: 12px;}
+    .i-partner ul { padding: 0 2%;}
+    .i-partner li { width: 46%; margin: 0 2%;}
+    .i-partner li img { width: 100%;}
+    .i-dapp { padding: 40px 0;}
+    .i-dapp h2.tit { margin-bottom: 25px;}
+    .i-partner h2.tit { margin-bottom: 25px;}
+    .i-statistics li p span { font-size: 14px;}
 
 }
 
