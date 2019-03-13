@@ -29,15 +29,11 @@ html,body,.box { width: 100%; height: 100%;}
 .header .nav .btn-login:hover { background-color: #6569cb; transition: all ease .3s;}
 .header .nav .btn-login i { display: none; width: 53px; height: 20px; background: url("../images/icon-scatter.png") no-repeat 0 0; background-size: 100% auto; position: relative; top: 3px; margin-right: 5px;}
 
-.banner1,.banner3 { background-color: #1a153d;}
-.banner2,.banner4 { background-color: #6569cb;}
-.banner { padding: 80px 0;}
-.banner img { display: block; margin: 0 auto; width: 95%; max-width: 1200px;}
 
-.i-login { padding: 150px 0;}
+.i-login { padding: 100px 0;}
 .i-login p { font-size: 14px; margin-bottom: 18px; color: #1a153d;}
 .i-login p i { display: inline-block; width: 64px; height: 64px; background: url("../images/telegram.png") no-repeat 0 0; background-size: 100% auto; position: relative; top: 3px;}
-.i-login .btn-login span { display: inline-block; height: 30px; line-height: 30px; padding: 8px 30px; background-color: #1a153d; color: #fff; border-radius: 2px; transition: all ease .3s; font-size: 14px;}
+.i-login .btn-login span { display: inline-block; height: 30px; line-height: 30px; padding: 3px 20px; background-color: #1a153d; color: #fff; border-radius: 2px; transition: all ease .3s; font-size: 14px;}
 .i-login .btn-login:hover span { background-color: #6569cb; transition: all ease .3s;}
 
 .footer { padding: 30px 0;}
@@ -175,10 +171,10 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
 .bti-logo img { height: 36px; display: block;}
 
 
-.news-zt { width: 100%; margin: 0 auto;}
-.news-zt img { height: 560px; display: block; margin: 0 auto;}
-.news-zt .swiper-slide:nth-child(even) { background-color: #1a153d;}
-.news-zt .swiper-slide:nth-child(odd) { background-color: #6569cb;}
+.banner-box { width: 100%; margin: 0 auto;}
+.banner-box img { height: 560px; display: block; margin: 0 auto;}
+.banner-box .swiper-slide:nth-child(even) { background-color: #1a153d;}
+.banner-box .swiper-slide:nth-child(odd) { background-color: #6569cb;}
 .swiper-pagination-bullet { background: #fff;}
 .swiper-pagination-bullet-active { background: #fff;}
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next { background: url("../images/news-l.png") no-repeat 50% 50%; background-size: 9px 18px;}
@@ -186,12 +182,16 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
 
 
 .i-statistics, .i-partner { background: #fff; padding: 120px 0;}
-.i-statistics h2.tit { margin-bottom: 50px;}
+.i-statistics h2.tit { margin-bottom: 5px;}
 .i-statistics ul { max-width: 1200px; margin: 0 auto;}
-.i-statistics li { float: left; width: 33.33%; margin-bottom: 20px;}
-.i-statistics li img { width: 100px; margin-bottom: 10px;}
-.i-statistics li p { font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
-.i-statistics li p span { font-size: 20px;}
+.i-statistics .i-statistics-info { max-width: 800px; padding: 40px 0;}
+.i-statistics .i-statistics-info li { float: left; width: 50%;}
+.i-statistics .i-statistics-info li p { font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.i-statistics .i-statistics-info li p span { font-size: 36px; color: #666ac5;}
+.i-statistics .i-statistics-pic li { float: left; width: 33.33%; margin-bottom: 20px;}
+.i-statistics .i-statistics-pic li img { width: 100px; margin-bottom: 10px;}
+.i-statistics .i-statistics-pic li p { font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.i-statistics .i-statistics-pic li p span { font-size: 20px;}
 
 
 .i-dapp { padding: 120px 0;}
@@ -220,8 +220,6 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
     .header .nav ul { display: block; width: 100%;}
     .header .nav ul li { width: 25%; margin: 0;}
     .header .nav ul li a { display: block; padding: 5px 0; text-align: center; font-size: 14px;}
-    .banner { padding: 40px 0; overflow: hidden;}
-    .banner img { width: 120%; margin-left: -10%;}
     .i-login { padding: 60px 0 30px 0;}
     .i-login p { font-size: 12px;}
     .footer p { padding: 0 10px;}
@@ -255,11 +253,14 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
     .bti-logo { position: relative; top: 0; left: 0; padding-left: 0; border-left: none; padding-bottom: 20px;}
     .bti-logo img { height: 36px; display: block; margin: 0 auto;}
 
-    .news-zt img { width: 100%; height: auto;}
-    .i-statistics, .i-partner { padding: 40px 0;}
-    .i-statistics h2.tit { margin-bottom: 25px;}
-    .i-statistics li img { width: 60px;}
-    .i-statistics li p { font-size: 12px;}
+    .banner-box img { width: 100%; height: auto;}
+    .i-statistics, .i-partner { padding: 40px 10px;}
+    .i-statistics .i-statistics-pic li img { width: 60px;}
+    .i-statistics .i-statistics-pic li p { font-size: 12px;}
+    .i-statistics .i-statistics-pic  li p span { font-size: 14px;}
+    .i-statistics .i-statistics-info { padding: 20px 0 40px 0;}
+    .i-statistics .i-statistics-info li p { font-size: 12px;}
+    .i-statistics .i-statistics-info li p span { font-size: 24px;}
     .i-dapp li { width: 33.33%; margin-bottom: 20px;}
     .i-dapp li img { width: 60px; height: 60px; margin-bottom: 3px;}
     .i-dapp li p { font-size: 12px;}
@@ -269,7 +270,7 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
     .i-dapp { padding: 40px 0;}
     .i-dapp h2.tit { margin-bottom: 25px;}
     .i-partner h2.tit { margin-bottom: 25px;}
-    .i-statistics li p span { font-size: 14px;}
+    .i-login .btn-login span { padding: 1px 20px;}
 
 }
 

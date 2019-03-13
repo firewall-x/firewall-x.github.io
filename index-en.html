@@ -7,19 +7,19 @@
     <title>FireWall.X — Powerful firewall of EOS smart contract</title>
     <link rel="shortcut icon" href="src/images/favicon.ico">
     <link rel="stylesheet" href="src/css/swiper-3.4.0.min.css">
-    <link rel="stylesheet" href="src/css/firewallx.css?1724">
+    <link rel="stylesheet" href="src/css/firewallx.css">
 </head>
 
 <body>
 <div class="header clearFix">
     <div class="logo">
-        <a href="index-en.html"><img src="src/images/logo.png"></a>
+        <a href="index-en.html"><img src="src/images/logo-en.png"></a>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="index-en.html">Home</a></li>
             <li><a href="https://github.com/firewall-x/contract" target="_blank">Doc</a></li>
-            <li><a href="#i-contact">Contact us</a></li>
+            <li><a href="#i-contact" class="btn-contact">Contact us</a></li>
             <li><a href="https://www.slowmist.com/en/" target="_blank">SlowMist</a></li>
         </ul>
         <p class="lang"><a href="index.html">中文</a> | <a href="index-en.html">EN</a></p>
@@ -28,8 +28,8 @@
 </div>
 
 <div class="main">
-    <div class="news-zt">
-        <div class="swiper-container swiper-zxkz">
+    <div class="banner-box">
+        <div class="swiper-container swiper-banner">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="src/images/b1-en.png"></div>
                 <div class="swiper-slide"><img src="src/images/b2-en.png"></div>
@@ -43,22 +43,30 @@
     </div>
     <div class="i-statistics">
         <h2 class="tit">Continuously Protect Your DApps</h2>
-        <!--<h2 class="tit">累计提供 123,456,789 次安全防护，成功拦截 333 次攻击</h2>-->
-        <ul class="clearFix">
+        <ul class="i-statistics-info clearFix">
+            <li>
+                <p><span class="i-statistics-total">-</span></p>
+                <p>times of security protection</p>
+            </li>
+            <li>
+                <p><span class="i-statistics-protect">-</span></p>
+                <p>times of attack intercepted</p>
+            </li>
+        </ul>
+        <ul class="i-statistics-pic clearFix">
             <li>
                 <img src="src/images/statistics-pic1.png">
-                <p><span class="i-statistics1">0</span> Contract Addresses</p>
+                <p><span class="i-statistics1">-</span> Contract Addresses</p>
             </li>
             <li>
                 <img src="src/images/statistics-pic2.png">
-                <p><span class="i-statistics2">0</span> Hacker Addresses</p>
+                <p><span class="i-statistics2">-</span> Hacker Addresses</p>
             </li>
             <li>
                 <img src="src/images/statistics-pic3.png">
-                <p><span class="i-statistics3">0</span> DApp </p>
+                <p><span class="i-statistics3">-</span> DApp </p>
             </li>
         </ul>
-        <!--<p class="tips">* 统计数据由 EOSPark API 提供支持</p>-->
     </div>
     <div class="i-dapp">
         <h2 class="tit">CASE</h2>
@@ -95,6 +103,7 @@
             <li><a href="https://www.dfuse.io/" target="_blank"><img src="src/images/partner5.png"></a></li>
             <li><a href="https://www.eosinfra.io/" target="_blank"><img src="src/images/partner6.png"></a></li>
             <li><a href="https://www.eosstudio.io/" target="_blank"><img src="src/images/partner7.png"></a></li>
+            <li><a href="https://open-api.eos.blockdog.com/" target="_blank"><img src="src/images/partner8.png"></a></li>
         </ul>
     </div>
 </div>
@@ -102,75 +111,125 @@
 <div class="i-login" id="i-contact">
     <p><a href="https://t.me/firewallx_io" target="_blank"><i></i></a></p>
     <p>Join Telegram for more information.</p>
-    <a href="https://t.me/firewallx_io" class="btn-login" target="_blank"><span style="padding:3px 20px">Telegram</span></a>
+    <a href="https://t.me/firewallx_io" class="btn-login" target="_blank"><span>Telegram</span></a>
 </div>
 <div class="footer">
-    <p>Copyright © 2018 FireWall.X All Rights Reserved. incubate by <a href="https://www.slowmist.com/en/" target="_blank">SlowMist</a> & <a href="https://www.slowmist.io/en/" target="_blank">SlowMist Zone</a></p>
+    <p>Copyright © 2018 FireWall.X All Rights Reserved.</p>
+    <p>Incubate by <a href="https://www.slowmist.com/en/" target="_blank">SlowMist</a> & <a href="https://www.slowmist.io/en/" target="_blank">SlowMist Zone</a></p>
 </div>
 <div class="bti-logo"><a href="https://www.slowmist.com/en/bti.html " target="_blank"><img src="src/images/bti-logo.png"></a></div>
 
 
+
 <script src="src/js/jquery-2.2.3.min.js" type="text/javascript"></script>
 <script src="src/js/swiper-3.4.0.jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-    var mySwiper = new Swiper('.swiper-zxkz', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        autoplay: 3500,
-        autoplayDisableOnInteraction: false,
-        loop: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 30
-    });
-
-</script>
+<script src="src/js/jquery.waypoints.min.js" type="text/javascript"></script>
+<script src="src/js/jquery.countup.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-    let token = 'eyJhbGciOiJLTVNFUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NTQzODk5MzksImp0aSI6ImE0ZjJjOTQ5LWM2NDUtNGMzMy05N2E3LTQ1MzlmNTg3NTVhNSIsImlhdCI6MTU1MTc5NzkzOSwiaXNzIjoiZGZ1c2UuaW8iLCJzdWIiOiJDaVFBNmNieWUzYlZTc2ZjRmQ1TmlsQTFiWTY5M2JTckh3UXJRWXJnUDlOVDZsaUdWTG9TT2dBL0NMUnREazFDUVZaZUUzeFZrL01PREdGaUZyaHNPU0VMYnBmcjBoRkozVGFTR3ZFdTJaUFAyMGltTTdwY01RZ0c2N00rSHZOVGdyND0iLCJ0aWVyIjoiYmV0YS12MSIsInYiOjF9.VJfPYshQ6bCYGkK1Pc8zAUGdTqYsRhH1NiGigOMpfl9w5BNBy4V40_jf7T0yoEO_wdo51OSEb5oeE_GQrah_GA'
-    $.ajax({
-        type:"get",
-        url:"https://mainnet.eos.dfuse.io/v0/state/table?account=firewall.x&scope=firewall.x&table=contractlst&json=true&token="+token,
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
-        success: function (res) {
-            let statisticsNum1 = res.rows.length;
-            $(".i-statistics1").text(statisticsNum1);
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            const data = JSON.parse(XMLHttpRequest.responseText);
-            alert(data);
-        }
-    });
-    $.ajax({
-        type:"get",
-        url:"https://mainnet.eos.dfuse.io/v0/state/table?account=firewall.x&scope=firewall.x&table=malicious&json=true&token="+token,
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
-        success: function (res) {
-            let statisticsNum2 = res.rows.length;
-            $(".i-statistics2").text(statisticsNum2);
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            const data = JSON.parse(XMLHttpRequest.responseText);
-            alert(data);
-        }
-    });
-    $.ajax({
-        type:"get",
-        url:"https://mainnet.eos.dfuse.io/v0/state/table?account=firewall.x&scope=firewall.x&table=member&json=true&token="+token,
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
-        success: function (res) {
-            let statisticsNum3 = res.rows.length;
-            $(".i-statistics3").text(statisticsNum3);
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            const data = JSON.parse(XMLHttpRequest.responseText);
-            alert(data);
-        }
-    });
+    $(document).ready(function () {
+        var mySwiper = new Swiper('.swiper-banner', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay: 3500,
+            autoplayDisableOnInteraction: false,
+            loop: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30
+        });
 
+        $(".btn-contact").click(function(e){
+            e.preventDefault();
+            $("html, body").animate({scrollTop: $("#i-contact").offset().top + 0 }, 350);
+        });
+
+        let token = 'eyJhbGciOiJLTVNFUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NTQzODk5MzksImp0aSI6ImE0ZjJjOTQ5LWM2NDUtNGMzMy05N2E3LTQ1MzlmNTg3NTVhNSIsImlhdCI6MTU1MTc5NzkzOSwiaXNzIjoiZGZ1c2UuaW8iLCJzdWIiOiJDaVFBNmNieWUzYlZTc2ZjRmQ1TmlsQTFiWTY5M2JTckh3UXJRWXJnUDlOVDZsaUdWTG9TT2dBL0NMUnREazFDUVZaZUUzeFZrL01PREdGaUZyaHNPU0VMYnBmcjBoRkozVGFTR3ZFdTJaUFAyMGltTTdwY01RZ0c2N00rSHZOVGdyND0iLCJ0aWVyIjoiYmV0YS12MSIsInYiOjF9.VJfPYshQ6bCYGkK1Pc8zAUGdTqYsRhH1NiGigOMpfl9w5BNBy4V40_jf7T0yoEO_wdo51OSEb5oeE_GQrah_GA'
+        $.ajax({
+            type:"get",
+            url:"https://mainnet.eos.dfuse.io/v0/state/table?account=firewall.x&scope=firewall.x&table=contractlst&json=true&token="+token,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (res) {
+                let statisticsNum1 = $.format(res.rows.length, 3, ',');
+                $(".i-statistics1").text(statisticsNum1);
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                const data = JSON.parse(XMLHttpRequest.responseText);
+                alert(data);
+            }
+        });
+        $.ajax({
+            type:"get",
+            url:"https://mainnet.eos.dfuse.io/v0/state/table?account=firewall.x&scope=firewall.x&table=malicious&json=true&token="+token,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (res) {
+                let statisticsNum2 = $.format(res.rows.length, 3, ',');
+                $(".i-statistics2").text(statisticsNum2);
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                const data = JSON.parse(XMLHttpRequest.responseText);
+                alert(data);
+            }
+        });
+        $.ajax({
+            type:"get",
+            url:"https://mainnet.eos.dfuse.io/v0/state/table?account=firewall.x&scope=firewall.x&table=member&json=true&token="+token,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (res) {
+                let statisticsNum3 = $.format(res.rows.length, 3, ',');
+                $(".i-statistics3").text(statisticsNum3);
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                const data = JSON.parse(XMLHttpRequest.responseText);
+                alert(data);
+            }
+        });
+        $.ajax({
+            type:"get",
+            url:"https://eos.slowmist.io/v2/firewallx_analysis",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (res) {
+                let statisticsTotal = $.format(res.total, 3, ',');
+                let statisticsProtect = $.format(res.protect, 3, ',');
+                $(".i-statistics-total").text(statisticsTotal).countUp();
+                $(".i-statistics-protect").text(statisticsProtect).countUp();
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                const data = JSON.parse(XMLHttpRequest.responseText);
+                alert(data);
+            }
+        });
+        (function($) {
+            $.extend({
+                format : function(str, step, splitor) {
+                    if(str==null){
+                        str='';
+                    }
+                    str = str.toString();
+                    var len = str.length;
+
+                    if(len > step) {
+                        var l1 = len%step,
+                            l2 = parseInt(len/step),
+                            arr = [],
+                            first = str.substr(0, l1);
+                        if(first != '') {
+                            arr.push(first);
+                        };
+                        for(var i=0; i<l2 ; i++) {
+                            arr.push(str.substr(l1 + i*step, step));
+                        };
+                        str = arr.join(splitor);
+                    };
+                    return str;
+                }
+            });
+        })(jQuery);
+    });
 </script>
 
 </body>
