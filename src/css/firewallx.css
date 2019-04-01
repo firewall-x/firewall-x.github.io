@@ -194,10 +194,14 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
 .i-statistics .i-statistics-pic li p span { font-size: 20px;}
 
 
+.i-contract-address { padding-top: 30px;}
+.i-contract-address a { display: inline-block; padding: 8px 20px; background-color: #666ac5; border-radius: 2px; color: #fff; font-size: 14px; transition: all ease .3s;}
+.i-contract-address a:hover { background-color: #1a153d; transition: all ease .3s;}
+
 .i-dapp { padding: 120px 0;}
 .i-dapp h2.tit { margin-bottom: 50px;}
 .i-dapp ul { max-width: 1200px; margin: 0 auto;}
-.i-dapp li { float: left; width: 20%;}
+.i-dapp li { float: left; width: 20%; margin-bottom: 30px;}
 .i-dapp li p { font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .i-dapp li img { width: 90px; height: 90px; border-radius: 20px; background-color: #fff; padding: 10px; margin-bottom: 10px;}
 
@@ -271,6 +275,8 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
     .i-dapp h2.tit { margin-bottom: 25px;}
     .i-partner h2.tit { margin-bottom: 25px;}
     .i-login .btn-login span { padding: 1px 20px;}
+    .i-contract-address { padding-top: 15px;}
+    .i-contract-address a { font-size: 12px; padding: 7px 15px;}
 
 }
 
