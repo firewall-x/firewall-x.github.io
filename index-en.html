@@ -102,6 +102,10 @@
                 <img src="src/images/dapp-pic7.png">
                 <p>TGON</p>
             </li>
+            <li>
+                <img src="src/images/dapp-pic8.png">
+                <p>MYKEY</p>
+            </li>
         </ul>
     </div>
     <div class="i-partner">
@@ -116,6 +120,7 @@
             <li><a href="https://www.eosinfra.io/" target="_blank"><img src="src/images/partner6.png"></a></li>
             <li><a href="https://www.eosstudio.io/" target="_blank"><img src="src/images/partner7.png"></a></li>
             <li><a href="https://open-api.eos.blockdog.com/" target="_blank"><img src="src/images/partner8.png"></a></li>
+            <li><a href="http://mykey.org/" target="_blank"><img src="src/images/partner10.png"></a></li>
         </ul>
     </div>
 </div>
@@ -156,49 +161,74 @@
             $("html, body").animate({scrollTop: $("#i-contact").offset().top + 0 }, 350);
         });
 
-        let token = 'eyJhbGciOiJLTVNFUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NTQzODk5MzksImp0aSI6ImE0ZjJjOTQ5LWM2NDUtNGMzMy05N2E3LTQ1MzlmNTg3NTVhNSIsImlhdCI6MTU1MTc5NzkzOSwiaXNzIjoiZGZ1c2UuaW8iLCJzdWIiOiJDaVFBNmNieWUzYlZTc2ZjRmQ1TmlsQTFiWTY5M2JTckh3UXJRWXJnUDlOVDZsaUdWTG9TT2dBL0NMUnREazFDUVZaZUUzeFZrL01PREdGaUZyaHNPU0VMYnBmcjBoRkozVGFTR3ZFdTJaUFAyMGltTTdwY01RZ0c2N00rSHZOVGdyND0iLCJ0aWVyIjoiYmV0YS12MSIsInYiOjF9.VJfPYshQ6bCYGkK1Pc8zAUGdTqYsRhH1NiGigOMpfl9w5BNBy4V40_jf7T0yoEO_wdo51OSEb5oeE_GQrah_GA'
-        $.ajax({
-            type:"get",
-            url:"https://mainnet.eos.dfuse.io/v0/state/table?account=firewall.x&scope=firewall.x&table=contractlst&json=true&token="+token,
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            success: function (res) {
-                let statisticsNum1 = $.format(res.rows.length, 3, ',');
-                $(".i-statistics1").text(statisticsNum1);
-            },
-            error: function (XMLHttpRequest, textStatus, errorThrown) {
-                const data = JSON.parse(XMLHttpRequest.responseText);
-                alert(data);
-            }
-        });
-        $.ajax({
-            type:"get",
-            url:"https://mainnet.eos.dfuse.io/v0/state/table?account=firewall.x&scope=firewall.x&table=malicious&json=true&token="+token,
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            success: function (res) {
-                let statisticsNum2 = $.format(res.rows.length, 3, ',');
-                $(".i-statistics2").text(statisticsNum2);
-            },
-            error: function (XMLHttpRequest, textStatus, errorThrown) {
-                const data = JSON.parse(XMLHttpRequest.responseText);
-                alert(data);
-            }
-        });
-        $.ajax({
-            type:"get",
-            url:"https://mainnet.eos.dfuse.io/v0/state/table?account=firewall.x&scope=firewall.x&table=member&json=true&token="+token,
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            success: function (res) {
-                let statisticsNum3 = $.format(res.rows.length, 3, ',');
-                $(".i-statistics3").text(statisticsNum3);
-            },
-            error: function (XMLHttpRequest, textStatus, errorThrown) {
-                const data = JSON.parse(XMLHttpRequest.responseText);
-                alert(data);
-            }
-        });
+        if (localStorage.token === undefined || (localStorage.expired !== undefined && $.now() > localStorage.expired)) {
+            $.ajax({
+                type: "POST",
+                url: "https://auth.dfuse.io/v1/auth/issue",
+                contentType: "application/json; charset=utf-8",
+                data: '{"api_key":"web_efed2a51daadd2c349f97d1d22095a7a"}',
+                dataType: "json",
+                success: function (res) {
+                    localStorage.token = res.token;
+                    localStorage.expired = res.expires_at * 1000;
+                    show_metric(res.token);
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    const data = JSON.parse(XMLHttpRequest.responseText);
+                    alert(data);
+                }
+            });
+        }else {
+            show_metric(localStorage.token);
+        }
+
+
+        //let token = 'eyJhbGciOiJLTVNFUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NTQzODk5MzksImp0aSI6ImE0ZjJjOTQ5LWM2NDUtNGMzMy05N2E3LTQ1MzlmNTg3NTVhNSIsImlhdCI6MTU1MTc5NzkzOSwiaXNzIjoiZGZ1c2UuaW8iLCJzdWIiOiJDaVFBNmNieWUzYlZTc2ZjRmQ1TmlsQTFiWTY5M2JTckh3UXJRWXJnUDlOVDZsaUdWTG9TT2dBL0NMUnREazFDUVZaZUUzeFZrL01PREdGaUZyaHNPU0VMYnBmcjBoRkozVGFTR3ZFdTJaUFAyMGltTTdwY01RZ0c2N00rSHZOVGdyND0iLCJ0aWVyIjoiYmV0YS12MSIsInYiOjF9.VJfPYshQ6bCYGkK1Pc8zAUGdTqYsRhH1NiGigOMpfl9w5BNBy4V40_jf7T0yoEO_wdo51OSEb5oeE_GQrah_GA'
+        function show_metric(token) {
+            $.ajax({
+                type:"get",
+                url:"https://mainnet.eos.dfuse.io/v0/state/table?account=firewall.x&scope=firewall.x&table=contractlst&json=true&token="+token,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (res) {
+                    let statisticsNum1 = $.format(res.rows.length, 3, ',');
+                    $(".i-statistics1").text(statisticsNum1);
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    const data = JSON.parse(XMLHttpRequest.responseText);
+                    alert(data);
+                }
+            });
+            $.ajax({
+                type:"get",
+                url:"https://mainnet.eos.dfuse.io/v0/state/table?account=firewall.x&scope=firewall.x&table=malicious&json=true&token="+token,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (res) {
+                    let statisticsNum2 = $.format(res.rows.length, 3, ',');
+                    $(".i-statistics2").text(statisticsNum2);
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    const data = JSON.parse(XMLHttpRequest.responseText);
+                    alert(data);
+                }
+            });
+            $.ajax({
+                type:"get",
+                url:"https://mainnet.eos.dfuse.io/v0/state/table?account=firewall.x&scope=firewall.x&table=member&json=true&token="+token,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (res) {
+                    let statisticsNum3 = $.format(res.rows.length, 3, ',');
+                    $(".i-statistics3").text(statisticsNum3);
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    const data = JSON.parse(XMLHttpRequest.responseText);
+                    alert(data);
+                }
+            });
+
+        }
         $.ajax({
             type:"get",
             url:"https://eos.slowmist.io/v2/firewallx_analysis",
