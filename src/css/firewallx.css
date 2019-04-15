@@ -94,6 +94,7 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
 .list-table th { background-color: #f8f8f8;}
 .list-table th,
 .list-table td { border-bottom: 1px solid #eee; padding: 10px;}
+.list-table .btn-group { text-align: left;}
 .list-table .btn-group a { margin: 0 5px;}
 .list-table .text-left { text-align: left;}
 
@@ -223,6 +224,7 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
     .header .nav .lang { position: absolute; right: 80px; top: 15px; margin: 0;}
     .header .nav ul { display: block; width: 100%;}
     .header .nav ul li { width: 25%; margin: 0;}
+    .header .nav ul li:first-child { display: none;}
     .header .nav ul li a { display: block; padding: 5px 0; text-align: center; font-size: 14px;}
     .i-login { padding: 60px 0 30px 0;}
     .i-login p { font-size: 12px;}
