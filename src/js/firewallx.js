@@ -13,8 +13,12 @@ $(document).ready(function () {
         })
     );
     $(".rule-lib a").on("click",(function () {
-            $(".rule-lib").find("a").removeClass("cur");
-            $(this).addClass("cur")
+            var cname = $(this).attr('class');
+            if (cname == 'cur') {
+                $(this).removeClass("cur")
+            }else {
+                $(this).addClass("cur")
+            }
         })
     );
     $(".rule-add-input a").on("click",(function () {
@@ -30,28 +34,6 @@ $(document).ready(function () {
         $(this).parent().remove();
         })
     );
-
-
-
-
-
-    // $(".btn-nav").on("click",(function(){
-    //     $(this).toggleClass("cur");
-    //     $(".s-header #menu ul").toggleClass("s-nav");
-    //     $("body").toggleClass("s-body");
-    // }));
-    //
-    // $(".btn-language").on("click",(function(){
-    //     $(".language-box").show();
-    // }));
-    // $('body').click(function(e) {
-    //     var target = $(e.target);
-    //     if(!target.is('.btn-language') && !target.is('.language-box')) {
-    //         if ( $('.language-box').is(':visible') ) {
-    //             $('.language-box').hide();
-    //         }
-    //     }
-    // });
 
 
 
