@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="email=no,telephone=no" name="format-detection"/>
+    <title>FireWall.X — Powerful firewall of EOS smart contract</title>
+    <link rel="shortcut icon" href="../src/images/favicon.ico">
+    <link rel="stylesheet" href="../src/css/firewallx.css">
+</head>
+
+<body>
+  <div class="box">
+      <div class="box-l">
+          <div class="logo"><a href="console-en.html"></a></div>
+          <ul class="m-nav">
+              <li><a href="console-en.html" class="router-link-active">DApp Manage</a></li>
+              <li><a href="rule-en.html">Rule Manage</a></li>
+              <li><a href="statistics-en.html">Statistical Analysis</a></li>
+          </ul>
+      </div>
+      <div class="box-r">
+          <div class="box-top">
+              <div class="box-top-con clearFix">
+                  <h2 class="title"><i></i>DApp Manage
+                      <a href="newdapp-en.html" class="btn-newdapp">+ Add DApp</a>
+                  </h2>
+                  <div class="box-top-gn clearFix">
+                      <div class="net">
+                          Switch Net：
+                          <span class="select-span">
+                              <select>
+                                  <option>MainNet</option>
+                                  <option>Jungle2.0 Testnet</option>
+                                  <option>CryptoKylin Testnet</option>
+                              </select>
+                          </span>
+                      </div>
+                      <div class="user">Hello，eos123 <a href="../index-en.html" class="btn-logout">Signout</a></div>
+                      <div class="lang"><a href="console.html">中文</a> | <a href="console-en.html">EN</a></div>
+                  </div>
+              </div>
+          </div>
+          <div class="box-con">
+              <div class="box-content">
+                  <table class="list-table">
+                      <tbody>
+                      <tr>
+                          <th width="40">No.</th>
+                          <th class="text-left">DApp Contract</th>
+                          <th>Create Time</th>
+                          <th>Status</th>
+                          <th width="380">Operation</th>
+                      </tr>
+                      <tr>
+                          <td>1</td>
+                          <td class="text-left">DApp1</td>
+                          <td>2018-12-05</td>
+                          <td><span class="state-green">Running</span></td>
+                          <td class="btn-group">
+                              <a href="#" class="btn-rule btn-blue">Rule Manage</a>
+                              <a href="#" class="btn-statistics btn-blue">Statistical Analysis</a>
+                              <a href="javascript:;" class="btn-suspend btn-red" style="width: 70px; text-align: center;">Quick Pause</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>2</td>
+                          <td class="text-left">DApp2</td>
+                          <td>2018-12-05</td>
+                          <td><span class="state-red">Paused</span></td>
+                          <td class="btn-group">
+                              <a href="#" class="btn-rule btn-blue">Rule Manage</a>
+                              <a href="#" class="btn-statistics btn-blue">Statistical Analysis</a>
+                              <a href="javascript:;" class="btn-open btn-green" style="width: 70px; text-align: center;">Quick Start</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>3</td>
+                          <td class="text-left">DApp3</td>
+                          <td>2018-12-05</td>
+                          <td><span class="state-green">Running</span></td>
+                          <td class="btn-group">
+                              <a href="#" class="btn-rule btn-blue">Rule Manage</a>
+                              <a href="#" class="btn-statistics btn-blue">Statistical Analysis</a>
+                              <a href="javascript:;" class="btn-suspend btn-red" style="width: 70px; text-align: center;">Quick Pause</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>4</td>
+                          <td class="text-left">DApp4</td>
+                          <td>2018-12-05</td>
+                          <td><span class="state-green">Running</span></td>
+                          <td class="btn-group">
+                              <a href="#" class="btn-rule btn-blue">Rule Manage</a>
+                              <a href="#" class="btn-statistics btn-blue">Statistical Analysis</a>
+                              <a href="javascript:;" class="btn-suspend btn-red" style="width: 70px; text-align: center;">Quick Pause</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>5</td>
+                          <td class="text-left">DApp5</td>
+                          <td>2018-12-05</td>
+                          <td><span class="state-green">Running</span></td>
+                          <td class="btn-group">
+                              <a href="#" class="btn-rule btn-blue">Rule Manage</a>
+                              <a href="#" class="btn-statistics btn-blue">Statistical Analysis</a>
+                              <a href="javascript:;" class="btn-suspend btn-red" style="width: 70px; text-align: center;">Quick Pause</a>
+                          </td>
+                      </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="suspend-tips tips-box">
+      <div class="tips-con">
+          <a href="javascript:;" class="btn-close"></a>
+          <p>Are you sure?</p>
+          <a href="javascript:;" class="btn-save btn-blue">Yes</a>
+          <a href="javascript:;" class="btn-cancel btn-red">No</a>
+      </div>
+  </div>
+  <div class="open-tips tips-box">
+      <div class="tips-con">
+          <a href="javascript:;" class="btn-close"></a>
+          <p>Are you sure?</p>
+          <a href="javascript:;" class="btn-save btn-blue">Yes</a>
+          <a href="javascript:;" class="btn-cancel btn-red">No</a>
+      </div>
+  </div>
+  <div class="loading-box">
+      <div class="loading-con"></div>
+  </div>
+  <script src="../src/js/jquery-2.2.3.min.js" type="text/javascript"></script>
+  <script src="../src/js/firewallx.js" type="text/javascript"></script>
+</body>
+</html>

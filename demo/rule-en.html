@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="email=no,telephone=no" name="format-detection"/>
+    <title>FireWall.X — Powerful firewall of EOS smart contract</title>
+    <link rel="shortcut icon" href="../src/images/favicon.ico">
+    <link rel="stylesheet" href="../src/css/firewallx.css">
+</head>
+
+<body>
+  <div class="box">
+      <div class="box-l">
+          <div class="logo"><a href="console-en.html"></a></div>
+          <ul class="m-nav">
+              <li><a href="console-en.html">DApp Manage</a></li>
+              <li><a href="rule-en.html" class="router-link-active">Rule Manage</a></li>
+              <li><a href="statistics-en.html">Statistical Analysis</a></li>
+          </ul>
+      </div>
+      <div class="box-r">
+          <div class="box-top">
+              <div class="box-top-con clearFix">
+                  <h2 class="title"><i></i>Rule Manage</h2>
+                  <div class="box-top-gn clearFix">
+                      <div class="net">
+                          Switch Net：
+                          <span class="select-span">
+                              <select>
+                                  <option>MainNet</option>
+                                  <option>Jungle2.0 Testnet</option>
+                                  <option>CryptoKylin Testnet</option>
+                              </select>
+                          </span>
+                      </div>
+                      <div class="user">Hello，eos123 <a href="../index-en.html" class="btn-logout">Signout</a></div>
+                      <div class="lang"><a href="rule.html">中文</a> | <a href="rule-en.html">EN</a></div>
+                  </div>
+              </div>
+          </div>
+          <div class="box-con">
+              <div class="box-content">
+                  <div class="rule-box">
+                      <ul>
+                          <li>
+                              <label>DApp Contract：</label>
+                              <span class="select-span">
+                                  <select>
+                                      <option>dapp1</option>
+                                      <option>dapp2</option>
+                                      <option>dapp3</option>
+                                      <option>dapp4</option>
+                                      <option>dapp5</option>
+                                  </select>
+                              </span>
+                          </li>
+                          <li>
+                              <label>Blacklist Combination：</label>
+                              <dl class="rule-lib">
+                                  <dd>
+                                      <a href="javascript:;" class="cur"><i></i>BTI Malicious Address</a>
+                                      <span><i></i>Data Provided by SlowMist</span>
+                                  </dd>
+                                  <dd>
+                                      <a href="javascript:;"><i></i>Contract Account</a>
+                                      <span><i></i>Contains all EOS accounts with deployed contracts. Enable this to block attacks from malicious contracts.</span>
+                                  </dd>
+                                  <dd>
+                                      <a href="javascript:;"><i></i>Potential Attackers</a>
+                                      <span><i></i>The data is aggregated by the firewall.x threat intelligence module.</span>
+                                  </dd>
+                              </dl>
+                          </li>
+                          <li>
+                              <label>Custom Blacklist：</label>
+                              <div class="rule-add-input">
+                                  <input type="text" class="input-text" placeholder="Please enter an account name">
+                                  <a href="javascript:;" class="btn-green">Add</a>
+                              </div>
+                              <dl class="rule-add-list clearFix">
+                              </dl>
+                          </li>
+                          <li>
+                              <label>Custom Whitelist：</label>
+                              <div class="rule-add-input">
+                                  <input type="text" class="input-text" placeholder="Please enter an account name">
+                                  <a href="javascript:;" class="btn-green">Add</a>
+                              </div>
+                              <dl class="rule-add-list clearFix">
+                              </dl>
+                          </li>
+                          <li><p class="tips">* Generate operation command</p></li>
+                          <li><a href="#" class="btn-blue">Save</a><a href="#" class="btn-red">Back</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script src="../src/js/jquery-2.2.3.min.js" type="text/javascript"></script>
+  <script src="../src/js/firewallx.js" type="text/javascript"></script>
+</body>
+</html>

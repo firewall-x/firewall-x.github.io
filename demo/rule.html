@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="email=no,telephone=no" name="format-detection"/>
+    <title>FireWall.X — 强大的 EOS 智能合约防火墙</title>
+    <link rel="shortcut icon" href="../src/images/favicon.ico">
+    <link rel="stylesheet" href="../src/css/firewallx.css">
+</head>
+
+<body>
+  <div class="box">
+      <div class="box-l">
+          <div class="logo"><a href="console.html"></a></div>
+          <ul class="m-nav">
+              <li><a href="console.html">DApp 管理</a></li>
+              <li><a href="rule.html" class="router-link-active">规则管理</a></li>
+              <li><a href="statistics.html">统计分析</a></li>
+          </ul>
+      </div>
+      <div class="box-r">
+          <div class="box-top">
+              <div class="box-top-con clearFix">
+                  <h2 class="title"><i></i>规则管理</h2>
+                  <div class="box-top-gn clearFix">
+                      <div class="net">
+                          切换网络：
+                          <span class="select-span">
+                              <select>
+                                  <option>MainNet</option>
+                                  <option>Jungle2.0 Testnet</option>
+                                  <option>CryptoKylin Testnet</option>
+                              </select>
+                          </span>
+                      </div>
+                      <div class="user">您好，eos123 <a href="../index.html" class="btn-logout">退出</a></div>
+                      <div class="lang"><a href="rule.html">中文</a> | <a href="rule-en.html">EN</a></div>
+                  </div>
+              </div>
+          </div>
+          <div class="box-con">
+              <div class="box-content">
+                  <div class="rule-box">
+                      <ul>
+                          <li>
+                              <label>DApp 合约：</label>
+                              <span class="select-span">
+                                  <select>
+                                      <option>dapp1</option>
+                                  </select>
+                              </span>
+                          </li>
+                          <li>
+                              <label>黑名单组合：</label>
+                              <dl class="rule-lib">
+                                  <dd>
+                                      <a href="javascript:;" class="cur"><i></i>BTI 恶意地址库</a>
+                                      <span><i></i>数据由慢雾科技提供，详细介绍(链接)</span>
+                                  </dd>
+                                  <dd>
+                                      <a href="javascript:;"><i></i>所有 EOS 合约账户</a>
+                                      <span><i></i>数据从链上实时采集，包含所有部署了合约的EOS账户</span>
+                                  </dd>
+                                  <dd>
+                                      <a href="javascript:;"><i></i>潜在攻击者库</a>
+                                      <span><i></i>数据由 firewall.x 威胁情报模块聚合而成</span>
+                                  </dd>
+                              </dl>
+                          </li>
+                          <li>
+                              <label>自定义黑名单：</label>
+                              <div class="rule-add-input">
+                                  <input type="text" class="input-text" placeholder="请输入黑名单">
+                                  <a href="javascript:;" class="btn-green">添加</a>
+                              </div>
+                              <dl class="rule-add-list clearFix">
+                              </dl>
+                          </li>
+                          <li>
+                              <label>自定义白名单：</label>
+                              <div class="rule-add-input">
+                                  <input type="text" class="input-text" placeholder="请输入白名单">
+                                  <a href="javascript:;" class="btn-green">添加</a>
+                              </div>
+                              <dl class="rule-add-list clearFix">
+                              </dl>
+                          </li>
+                          <li><p class="tips">* 白名单权重高于黑名单</p></li>
+                          <li><a href="#" class="btn-blue">保存</a><a href="#" class="btn-red">返回</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script src="../src/js/jquery-2.2.3.min.js" type="text/javascript"></script>
+  <script src="../src/js/firewallx.js" type="text/javascript"></script>
+</body>
+</html>
