@@ -1,6 +1,6 @@
 /* CSS Document */
 body, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, ol, li, fieldset, button, input, textarea, th, td { margin: 0; padding: 0;}
-body { font: 12px/1.6 Helvetica, "Microsoft YaHei", Tahoma, Arial, "\5b8b\4f53", sans-serif; color: #333; text-align: center; background-color: #efefef;}
+body { font: 12px/1.6 Helvetica, "Microsoft YaHei", Tahoma, Arial, "\5b8b\4f53", sans-serif; color: #333; text-align: center; background-color: #fff;}
 ul, ol, li { list-style: none;}
 a { text-decoration: none; color: #1a153d;}
 a:hover { text-decoration: none; color: #6569cb;}
@@ -182,7 +182,7 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev { background: url("../images/news-r.png") no-repeat 50% 50%; background-size: 9px 18px;}
 
 
-.i-statistics, .i-partner { background: #fff; padding: 120px 0;}
+.i-statistics, .i-news { padding: 120px 0;}
 .i-statistics h2.tit { margin-bottom: 5px;}
 .i-statistics ul { max-width: 1200px; margin: 0 auto;}
 .i-statistics .i-statistics-info { max-width: 800px; padding: 40px 0;}
@@ -199,7 +199,7 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
 .i-contract-address a { display: inline-block; padding: 8px 20px; background-color: #666ac5; border-radius: 2px; color: #fff; font-size: 14px; transition: all ease .3s;}
 .i-contract-address a:hover { background-color: #1a153d; transition: all ease .3s;}
 
-.i-dapp { padding: 120px 0;}
+.i-dapp, .i-partner { padding: 120px 0; background: #efefef;}
 .i-dapp h2.tit { margin-bottom: 50px;}
 .i-dapp ul { max-width: 1200px; margin: 0 auto;}
 .i-dapp li { float: left; width: 20%; margin-bottom: 30px;}
@@ -211,10 +211,25 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
 .i-partner ul { max-width: 1200px; margin: 0 auto;}
 .i-partner li { float: left; width: 25%; margin-bottom: 20px;}
 .i-partner li img { max-width: 180px; display: block;  margin: 0 auto;}
-.i-partner li a { display: inline-block; border: 1px solid #eee; padding: 5px; box-shadow: 0 1px 3px -2px rgba(10, 16, 34, .1); transition: all .3s ease;}
+.i-partner li a { display: inline-block; background-color: #fff; padding: 5px; box-shadow: 0 1px 3px -2px rgba(10, 16, 34, .1); transition: all .3s ease;}
 .i-partner li a:hover { box-shadow: 0 10px 60px -2px rgba(10, 16, 34, .1); transition: all .3s ease;}
 
 .i-statistics p.tips { padding-top: 10px; color: #999; font-size: 12px;}
+
+/*--i-news--*/
+.i-news ul { max-width: 1200px; margin: 0 auto;}
+.i-news h2.tit { margin-bottom: 50px;}
+.i-news ul li { float: left; width: 50%; text-align: left;}
+.i-news ul li a { color: #333; display: block; margin: 10px; padding: 20px 60px 20px 100px; min-height: 50px; position: relative; border: 1px solid #eee; background-color: #fff; box-shadow: 0 1px 3px -2px rgba(10, 16, 34, .1); transition: all .3s ease;}
+.i-news li a:hover { color: #333; box-shadow: 0 10px 60px -2px rgba(10, 16, 34, .1); transition: all .3s ease;}
+.i-news ul li a h3 { font-size: 14px; margin-bottom: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.i-news ul li a h3 span { display: inline-block; padding: 0 10px; background-color: #666ac5; border-radius: 20px; color: #fff; font-weight: normal; margin-right: 5px;}
+.i-news ul li a p.text { font-size: 12px; overflow: hidden; height: 38px;}
+.i-news ul li a img { position: absolute; left: 10px; top: 12px; width: 76px; height: 76px;}
+.i-news ul li a .time { position: absolute; right: 15px; top: 30px; line-height: 1; letter-spacing: 1px;}
+.i-news ul li a .time p.year { font-size: 14px;}
+.i-news ul li a .time i { position: relative; top: 2px; left: 10px; display: inline-block; width: 15px; height: 15px; background: url("../images/icon-line.png") no-repeat 0 0; background-size: 100% auto;}
+
 
 @media screen and (max-width: 750px) {
     .header { padding: 15px 10px 3px 10px;}
@@ -279,7 +294,11 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
     .i-login .btn-login span { padding: 1px 20px;}
     .i-contract-address { padding-top: 15px;}
     .i-contract-address a { font-size: 12px; padding: 7px 15px;}
-
+    /*--i-news--*/
+    .i-news { padding: 40px 10px;}
+    .i-news h2.tit { margin-bottom: 25px;}
+    .i-news ul li { width: 100%; margin-bottom: 10px;}
+    .i-news ul li a { margin: 0 15px;}
 }
 
 
