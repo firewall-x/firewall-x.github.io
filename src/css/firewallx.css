@@ -36,7 +36,7 @@ html,body,.box { width: 100%; height: 100%;}
 .i-login .btn-login span { display: inline-block; height: 30px; line-height: 30px; padding: 3px 20px; background-color: #1a153d; color: #fff; border-radius: 2px; transition: all ease .3s; font-size: 14px;}
 .i-login .btn-login:hover span { background-color: #6569cb; transition: all ease .3s;}
 
-.footer { padding: 30px 0;}
+.footer { padding: 30px 0 50px 0;}
 .footer a { color: #6569cb; margin: 0 3px; transition: all ease .3s;}
 .footer a:hover { text-decoration: underline; transition: all ease .3s;}
 
@@ -230,6 +230,10 @@ a.btn-green:hover { background-color: #7cd18e; color: #fff; transition: all ease
 .i-news ul li a .time p.year { font-size: 14px;}
 .i-news ul li a .time i { position: relative; top: 2px; left: 10px; display: inline-block; width: 15px; height: 15px; background: url("../images/icon-line.png") no-repeat 0 0; background-size: 100% auto;}
 
+
+
+.explain-tips { position: fixed; z-index: 99999999; left: 0; bottom: 0; padding: 8px 0; width: 100%; background-color: rgba(222,95,95,0.9); color: #fff; box-shadow: 0 0 20px rgba(0,0,0,0.1)}
+.explain-tips p { font-size: 12px; padding: 0 20px;}
 
 @media screen and (max-width: 750px) {
     .header { padding: 15px 10px 3px 10px;}
